@@ -1,0 +1,204 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Workflow" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1149.3333333333333,1015.3333333333335" sap2010:WorkflowViewState.IdRef="Workflow_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ucas="clr-namespace:UiPath.Core.Activities.SAP;assembly=UiPath.UiAutomation.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Workflow" sap:VirtualizedContainerService.HintSize="1016,950.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:CurrentJobInfo" Name="JobData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetCurrentJobInfo DisplayName="Get Current Job Info" sap:VirtualizedContainerService.HintSize="954,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[JobData]" />
+    <uix:NCheckState DisplayName="Check App State 'Enter Warehouse'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="954,461.3333333333333" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V3">
+      <uix:NCheckState.IfExists>
+        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,141.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ucas:ClickToolbarButton ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" AlterIfDisabled="True" DisplayName="Click Toolbar Button 'Menubar  mbar'" sap:VirtualizedContainerService.HintSize="388,50.666666666666664" sap2010:WorkflowViewState.IdRef="ClickToolbarButton_1" Item="Transfer Order/Confirm/Transfer Order">
+            <ucas:ClickToolbarButton.Items>
+              <scg:List x:TypeArguments="x:String" Capacity="50">
+                <x:String>Goto/Add to Existing Stock</x:String>
+                <x:String>Goto/Pre-Allocated Stock</x:String>
+                <x:String>Goto/Back</x:String>
+                <x:String>System/New GUI Window</x:String>
+                <x:String>System/Close GUI Window</x:String>
+                <x:String>System/Services for Object</x:String>
+                <x:String>System/Own Spool Requests</x:String>
+                <x:String>System/Own Jobs</x:String>
+                <x:String>System/Short Message</x:String>
+                <x:String>System/Status...</x:String>
+                <x:String>System/Log Off</x:String>
+                <x:String>Help/Product Assistance</x:String>
+                <x:String>Help/SAP Help Portal</x:String>
+                <x:String>Help/SAP Support Portal</x:String>
+                <x:String>Help/Create Support Message</x:String>
+                <x:String>Help/Settings...</x:String>
+                <x:String>Transfer Order/Create/Without Reference</x:String>
+                <x:String>Transfer Order/Create/For Transfer Requirement</x:String>
+                <x:String>Transfer Order/Create/For Delivery Document</x:String>
+                <x:String>Transfer Order/Create/For inbound delivery</x:String>
+                <x:String>Transfer Order/Create/For Post. Change Notice</x:String>
+                <x:String>Transfer Order/Create/Move Storage Unit</x:String>
+                <x:String>Transfer Order/Create/Other Transfer Order</x:String>
+                <x:String>Transfer Order/Confirm/Item</x:String>
+                <x:String>Transfer Order/Confirm/Transfer Order</x:String>
+                <x:String>Transfer Order/Confirm/Storage Unit</x:String>
+                <x:String>Transfer Order/Cancel/Transfer Order</x:String>
+                <x:String>Transfer Order/Cancel/Storage Unit</x:String>
+                <x:String>System/User Profile/Hold Data</x:String>
+                <x:String>System/User Profile/Set Data</x:String>
+                <x:String>System/User Profile/Delete Data</x:String>
+                <x:String>System/User Profile/User Data</x:String>
+                <x:String>System/User Profile/Expand Favorites</x:String>
+                <x:String>System/Services/Reporting</x:String>
+                <x:String>System/Services/QuickViewer</x:String>
+                <x:String>System/Services/Output Control</x:String>
+                <x:String>System/Services/Direct Input</x:String>
+                <x:String>System/Services/Queue</x:String>
+                <x:String>System/Utilities/Debug Dynpro</x:String>
+                <x:String>System/Utilities/Debug ABAP</x:String>
+                <x:String>System/Utilities/Debug System</x:String>
+                <x:String>System/Utilities/Resource Usage</x:String>
+                <x:String>System/Utilities/Autom. Queue: Synchronous Processing</x:String>
+                <x:String>System/Utilities/Performance Trace</x:String>
+                <x:String>System/Utilities/Context Trace</x:String>
+                <x:String>System/Utilities/Display Authorization Check</x:String>
+                <x:String>System/My Objects/Object History</x:String>
+                <x:String>System/My Objects/Edit Objects</x:String>
+                <x:String>System/Services/Table Maintenance/Extended Table Maintenance</x:String>
+                <x:String>System/Services/Table Maintenance/View Cluster Maintenance</x:String>
+              </scg:List>
+            </ucas:ClickToolbarButton.Items>
+            <ucas:ClickToolbarButton.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="851fb703-6d2f-4833-a8b1-3013864f65e1" InformativeScreenshot="ce7400829ed979f4ab76623198ca933a" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;&lt;sap id='mbar' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ucas:ClickToolbarButton.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ucas:ClickToolbarButton>
+        </Sequence>
+      </uix:NCheckState.IfExists>
+      <uix:NCheckState.IfNotExists>
+        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,208" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Throw Exception="[new SystemException(&quot;Unable to Load the Transfer Order Screen&quot;)]" sap:VirtualizedContainerService.HintSize="388,117.33333333333333" sap2010:WorkflowViewState.IdRef="Throw_1" />
+        </Sequence>
+      </uix:NCheckState.IfNotExists>
+      <uix:NCheckState.Target>
+        <uix:TargetAnchorable ContentHash="soRw8VWErkui5EyNbC87WA" DesignTimeRectangle="322, 300, 51, 31" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtLTAK-LGNUM' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtLTAK-LGNUM' /&gt;" Guid="95d90321-441a-4bec-9648-d4bbd54e2e7d" InformativeScreenshot="47382a1c0cfa046251e36fe85c8d0cbf.png" Reference="4eDhVX_v00eu3ciUYy__nw/T8naKEJFLUyC7sQRGG9afA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+      </uix:NCheckState.Target>
+    </uix:NCheckState>
+    <ui:LogMessage DisplayName="Start Log Message" sap:VirtualizedContainerService.HintSize="954,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[JobData.WorkflowName]" />
+    <ui:LogMessage DisplayName="End Log Message" sap:VirtualizedContainerService.HintSize="954,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;/&quot; + JobData.WorkflowName]" />
+  </Sequence>
+</Activity>

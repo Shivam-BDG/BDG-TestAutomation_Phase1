@@ -1,0 +1,117 @@
+﻿{
+  "DisplayName": "MIGO_S01_GoodsReceipt_GenerateDelivery",
+  "Tooltip": "This is designed to Generate Delivery Number by providing Inputs to Goods Receipt Screen in SAP Application.",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_strReceiptType",
+      "DisplayName": "in_strReceiptType",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strDocumentType",
+      "DisplayName": "in_strDocumentType",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strMovementType",
+      "DisplayName": "in_strMovementType",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strMaterial",
+      "DisplayName": "in_strMaterial",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strQuantity",
+      "DisplayName": "in_strQuantity",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strPlant",
+      "DisplayName": "in_strPlant",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strStorageLocation",
+      "DisplayName": "in_strStorageLocation",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "out_strDeliveryNumber",
+      "DisplayName": "out_strDeliveryNumber",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": "TextComposer",
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_strDateOfManufacture",
+      "DisplayName": "in_strDateOfManufacture",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "DisplayName": "VA01_S09_CreateWithReference_ItemSelection",
+  "Tooltip": "This is designed to select rows with required material.",
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_strArrMaterialToSelect",
+      "DisplayName": "in_strArrMaterialToSelect",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

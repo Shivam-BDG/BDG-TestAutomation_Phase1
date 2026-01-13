@@ -1,0 +1,597 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="VA01_S03_CreateStandardOrder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="out_CreatedSalesOrderNumber" Type="OutArgument(x:String)" />
+    <x:Property Name="io_Is_CreditPopUpAvailable" Type="InOutArgument(x:Boolean)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1810,3712.6666666666665</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>VA01_S03_CreateStandardOrder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="VA01_S03_CreateStandardOrder" sap:VirtualizedContainerService.HintSize="1820,3648" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:CurrentJobInfo" Name="JobData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:GetCurrentJobInfo DisplayName="Get Current Job Info" sap:VirtualizedContainerService.HintSize="1758,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[JobData]" />
+    <ui:LogMessage DisplayName="Start Log Message" sap:VirtualizedContainerService.HintSize="1758,175.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[JobData.WorkflowName]" />
+    <uix:NCheckState DisplayName="Check App State 'Create Standard Order: …'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1758,3161.3333333333335" sap2010:WorkflowViewState.IdRef="NCheckState_1" Version="V5">
+      <uix:NCheckState.IfExists>
+        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1254,2909.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:String" Name="strDocCompleteStatusMsg" />
+            <Variable x:TypeArguments="x:String" Name="strStdrdOrderSaveMsg" />
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Create Standard Order: Overview" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="1192,2818.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" IsDisplayNameAuto="True" ScopeGuid="3954a0d4-c9f0-4982-ae9f-16c59b1db1a8" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1158,2523.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:Boolean" Name="is_StdrdOrderMsgCorrect" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into Customer Reference" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1096,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3954a0d4-c9f0-4982-ae9f-16c59b1db1a8" Text="[DateTime.Now.ToString(&quot;MM/dd/yyyy HH:mm:ss&quot;)]" Version="V5">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="257, 334, 298, 31" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/subSUBSCREEN_HEADER:SAPMV45A:4021/txtVBKD-BSTKD' /&gt;" Guid="38635f83-acb2-4979-bfed-5135dae9f9d6" InformativeScreenshot="fe32fe7eb051e7a78b8c225220e8c66d.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NTypeInto.Target>
+                    <uix:NTypeInto.VerifyOptions>
+                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      </uix:VerifyExecutionTypeIntoOptions>
+                    </uix:NTypeInto.VerifyOptions>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NTypeInto>
+                  <uix:NSAPClickToolbarButton DisplayName="Click Toolbar Button &quot;Incompletion Log&quot;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1096,57.333333333333336" sap2010:WorkflowViewState.IdRef="NSAPClickToolbarButton_1" Item="Edit/Incompletion Log" ScopeIdentifier="3954a0d4-c9f0-4982-ae9f-16c59b1db1a8" Version="V5">
+                    <uix:NSAPClickToolbarButton.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="50">
+                        <x:String>Sales Document/Create</x:String>
+                        <x:String>Sales Document/Change</x:String>
+                        <x:String>Sales Document/Display</x:String>
+                        <x:String>Sales Document/Create with Reference</x:String>
+                        <x:String>Sales Document/Create with Reference to Serial Number</x:String>
+                        <x:String>Sales Document/Save</x:String>
+                        <x:String>Sales Document/Create Subsequent Order</x:String>
+                        <x:String>Sales Document/Deliver</x:String>
+                        <x:String>Sales Document/Billing</x:String>
+                        <x:String>Sales Document/Delete</x:String>
+                        <x:String>Sales Document/Exit</x:String>
+                        <x:String>Edit/Delete Unchanged Item</x:String>
+                        <x:String>Edit/Batch Determtn</x:String>
+                        <x:String>Edit/Overall Network Scheduling</x:String>
+                        <x:String>Edit/Check Dangerous Goods</x:String>
+                        <x:String>Edit/Check Document Availability</x:String>
+                        <x:String>Edit/New Pricing Document</x:String>
+                        <x:String>Edit/Incompletion Log</x:String>
+                        <x:String>Edit/Cancel</x:String>
+                        <x:String>Goto/Overview</x:String>
+                        <x:String>Goto/View</x:String>
+                        <x:String>Goto/Loading Units and Aggregation Categories</x:String>
+                        <x:String>Goto/Back</x:String>
+                        <x:String>Extras/Packing Proposal</x:String>
+                        <x:String>Extras/Shipment Cost Information</x:String>
+                        <x:String>Extras/Configuration</x:String>
+                        <x:String>Extras/Costing</x:String>
+                        <x:String>Extras/Parameter Effectivity</x:String>
+                        <x:String>Extras/Technical Objects</x:String>
+                        <x:String>Extras/Documents</x:String>
+                        <x:String>Extras/Display Batch Determ.</x:String>
+                        <x:String>Environment/Display Originals</x:String>
+                        <x:String>Environment/Changes</x:String>
+                        <x:String>Environment/Display Document Flow</x:String>
+                        <x:String>Environment/Status Overview</x:String>
+                        <x:String>Environment/External Credit Insurance</x:String>
+                        <x:String>Environment/Display Material</x:String>
+                        <x:String>Environment/Availability</x:String>
+                        <x:String>Environment/Substance Reports</x:String>
+                        <x:String>Environment/Order Report</x:String>
+                        <x:String>Environment/Cost Report</x:String>
+                        <x:String>System/New GUI Window</x:String>
+                        <x:String>System/Close GUI Window</x:String>
+                        <x:String>System/Services for Object</x:String>
+                        <x:String>System/Own Spool Requests</x:String>
+                        <x:String>System/Own Jobs</x:String>
+                        <x:String>System/Short Message</x:String>
+                        <x:String>System/Status...</x:String>
+                        <x:String>System/Log Off</x:String>
+                        <x:String>Help/Product Assistance</x:String>
+                      </scg:List>
+                    </uix:NSAPClickToolbarButton.Items>
+                    <uix:NSAPClickToolbarButton.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="56, 36, 1473, 18" FullSelectorArgument="&lt;sap id='mbar' /&gt;" Guid="8d4229f0-a527-4355-b92c-fde6430115a8" InformativeScreenshot="92745a10771ce8536556d5e79c6ee8c7.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NSAPClickToolbarButton.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NSAPClickToolbarButton>
+                  <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Read Status Bar" sap:VirtualizedContainerService.HintSize="1096,57.333333333333336" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3">
+                    <ui:RetryScope.ActivityBody>
+                      <ActivityAction>
+                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,316" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NSAPReadStatusbar MessageData="{x:Null}" MessageId="{x:Null}" MessageNumber="{x:Null}" MessageType="{x:Null}" DisplayName="Read Status Bar" sap:VirtualizedContainerService.HintSize="354,228" sap2010:WorkflowViewState.IdRef="NSAPReadStatusbar_1" MessageText="[strDocCompleteStatusMsg]" Version="V5">
+                            <uix:NSAPReadStatusbar.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="37283df4-159d-4de3-901a-585a7bc5da2d" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
+                            </uix:NSAPReadStatusbar.Target>
+                          </uix:NSAPReadStatusbar>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:RetryScope.ActivityBody>
+                    <ui:RetryScope.Condition>
+                      <ActivityFunc x:TypeArguments="x:Boolean" />
+                    </ui:RetryScope.Condition>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:RetryScope>
+                  <If Condition="[strDocCompleteStatusMsg = &quot;Document is complete&quot;]" DisplayName="If - DocCompleteMessage Correct?" sap:VirtualizedContainerService.HintSize="1096,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message - Doc Complete Successsfully" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Create Standard Sreen : Document is complete successfully. Read Status Message : &quot; + strDocCompleteStatusMsg]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message - Doc Not Complete" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;VA01 - Create Standard Screen :  Document is not completed. Read Status Message : &quot; + strDocCompleteStatusMsg]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <Throw DisplayName="Throw - Doc Not Completed" Exception="[New SystemException(&quot;VA01 - Create Standard Screen :  Document is not completed. Read Status Message : &quot; + strDocCompleteStatusMsg)]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Throw_2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Throw>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                  <uix:NSAPClickToolbarButton DisplayName="Click &quot;Save&quot; Button" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="1096,57.333333333333336" sap2010:WorkflowViewState.IdRef="NSAPClickToolbarButton_2" Item="Save   (Ctrl+S)" ScopeIdentifier="3954a0d4-c9f0-4982-ae9f-16c59b1db1a8" Version="V5">
+                    <uix:NSAPClickToolbarButton.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="14">
+                        <x:String>Enter</x:String>
+                        <x:String>Close Command Field</x:String>
+                        <x:String xml:space="preserve">Save   (Ctrl+S)</x:String>
+                        <x:String xml:space="preserve">Back   (F3)</x:String>
+                        <x:String xml:space="preserve">Exit   (Shift+F3)</x:String>
+                        <x:String xml:space="preserve">Cancel   (F12)</x:String>
+                        <x:String xml:space="preserve">First Page   (Ctrl+Page up)</x:String>
+                        <x:String xml:space="preserve">Previous Page   (Page up)</x:String>
+                        <x:String xml:space="preserve">Next Page   (Page down)</x:String>
+                        <x:String xml:space="preserve">Last Page   (Ctrl+Page down)</x:String>
+                        <x:String>New GUI Window</x:String>
+                        <x:String>Generates shortcut</x:String>
+                        <x:String xml:space="preserve">Help   (F1)</x:String>
+                        <x:String>Customize Local Layout (Alt+F12)</x:String>
+                      </scg:List>
+                    </uix:NSAPClickToolbarButton.Items>
+                    <uix:NSAPClickToolbarButton.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="30, 66, 1882, 46" ElementType="Toolbar" FullSelectorArgument="&lt;sap id='tbar[0]' /&gt;" Guid="81541331-0d8c-4bdf-9540-6b64804c6a9c" InformativeScreenshot="bacf336705a97f1d62e5174a35971d2c.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NSAPClickToolbarButton.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NSAPClickToolbarButton>
+                  <uix:NCheckState DisplayName="Check App State 'Credit Check SAP Credit…'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1096,953.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_2" IsLoose="True" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="592,701.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: SAP Credit Management: Messages from Credit Check" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="530,610.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" IsDisplayNameAuto="True" ScopeGuid="94eb36d6-9431-4d82-96ee-98fcd4b528f6" Version="V2">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,315.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click &quot;Continue&quot; Button" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94eb36d6-9431-4d82-96ee-98fcd4b528f6" Version="V5">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable DesignTimeRectangle="1280, 581, 31, 31" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="97e5a4d1-cd58-4e57-87be-33d9014dff20" InformativeScreenshot="0d2978d4b07b85d51d611488fddbf0da.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='#32770' title='SAP Credit Management: Messages from Credit Check' idx='*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uix:NClick>
+                                <ui:LogMessage DisplayName="Log Message - Removed Credit Check Window" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Successfully removed credit check pop-up window.&quot;]">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </ui:LogMessage>
+                                <Assign DisplayName="Assign io_Is_CreditPopUpAvailable" sap:VirtualizedContainerService.HintSize="434,110" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Boolean">[io_Is_CreditPopUpAvailable]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                              </Sequence>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="25, 220, 1321, 622" FilePath="[in_Config(&quot;SAP_FilePath&quot;).ToString]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVGhD7ZY7SyNRFIAja+n+h8UXKq6o+ECygTGFlYXYCJaC4IIBRQtNLLXyuVF0wULcxpjRQrDQwhVt7EUrQciu8YXJEBNQmz2eiye44jWZxTvjjpwPviZFznfu3IRxMQzDMAzDMO8I79BKE9riEL2U/UChL5iDH0ZQcICJxoDuofQHHLSAgfFuyn7EIQsYWkBvoOSnOGCB+Ivxgv98gRjG11GqnPzOcVxAj3gDOtiiPFSmiK+lzKcYqdvhtLHrm5HFrcPE/OY+WO7GPrSPrkOjPywL/tsrza/XUO5zjNQdvIVza3vwpXcBtMFlWXTaSzz5akqVI/tyK42jM6u7UP91Gjz9PzI9ARFfRZkvIxtipcGVHajvCoKnbzFT/AVem0pKzIxsiBWKk58Kb0Nd17ds8Wd48hWUlx3ZMNXGk7cwubxt5uTPtUD4M6WZQzZQpfHkHUyEfpqJFydfTlnmwSGJtHhS16ex1J/oVRJUObZkKj6K8WWU9G+cGTe5woOj37nNrW0fPT3zJ27fHLi7Z5XY4Pue7d8mqvnDpZTzOvIKaj5oA6GINrAEyhwMAb45ysKFJ3jnS2j86ynsnrbzXegXXptiGq0GG1/mRHwRjVWHTQtELIkX2LDAMf4eCmiceixeQMTn0yjrwEEdaI9qMf4TjWAYhmEYhmGU4HLdAwUCoaAm9Q3LAAAAAElFTkSuQmCC" InformativeScreenshot="5306819852352c9c6d83c5d975fd23a2.png" Selector="&lt;wnd app='saplogon.exe' cls='#32770' title='SAP Credit Management: Messages from Credit Check' idx='*' /&gt;" Version="V2" />
+                          </uix:NApplicationCard.TargetApp>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NApplicationCard>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,141.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message - No Credit Check Pop-Up" sap:VirtualizedContainerService.HintSize="388,50.666666666666664" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;No credit check pop-up found.&quot;]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="11, 11, 734, 47" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='HEADING' aaname='Credit Check SAP Credit Management Failed' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Credit Check SAP Credit Management Failed' /&gt;" Guid="57192579-43be-4ff4-b677-b006cfc990ce" InformativeScreenshot="a8ab95598225602184985c86e0998167.png" ScopeSelectorArgument="&lt;html app='saplogon.exe' url='saphtmlp://htmlviewer.sap.com/*/HTML000004.htm' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+                    </uix:NCheckState.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NCheckState>
+                  <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Read Status Bar" sap:VirtualizedContainerService.HintSize="1096,549.3333333333334" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="3">
+                    <ui:RetryScope.ActivityBody>
+                      <ActivityAction>
+                        <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,316" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NSAPReadStatusbar MessageData="{x:Null}" MessageId="{x:Null}" MessageNumber="{x:Null}" MessageType="{x:Null}" DelayBefore="[CInt(in_Config(&quot;DelayMedium&quot;))]" DisplayName="Read Status Bar" sap:VirtualizedContainerService.HintSize="354,228" sap2010:WorkflowViewState.IdRef="NSAPReadStatusbar_3" MessageText="[strStdrdOrderSaveMsg]" Version="V5">
+                            <uix:NSAPReadStatusbar.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="c4300275-bd90-481e-9669-7aa5155306c9" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
+                            </uix:NSAPReadStatusbar.Target>
+                          </uix:NSAPReadStatusbar>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:RetryScope.ActivityBody>
+                    <ui:RetryScope.Condition>
+                      <ActivityFunc x:TypeArguments="x:Boolean" />
+                    </ui:RetryScope.Condition>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:RetryScope>
+                  <ui:IsMatch BuilderPattern="Returns Delivery \d+ has been saved" DisplayName="Is Standard Order saved Message correct?" sap:VirtualizedContainerService.HintSize="1096,92" sap2010:WorkflowViewState.IdRef="IsMatch_1" Input="[strStdrdOrderSaveMsg]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;Returns Delivery \\d+ has been saved&quot;,&quot;QuantifierFirstValue&quot;:&quot;1&quot;,&quot;QuantifierID&quot;:&quot;EXT&quot;,&quot;QuantifierName&quot;:&quot;Exactly&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="Standard Order \d+ has been saved." RegexOption="IgnoreCase, Compiled" Result="[is_StdrdOrderMsgCorrect]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:IsMatch>
+                  <If Condition="[is_StdrdOrderMsgCorrect]" DisplayName="If - is_StdrdOrderMsgCorrect True?" sap:VirtualizedContainerService.HintSize="1096,551.3333333333334" sap2010:WorkflowViewState.IdRef="If_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message - Standard Order Saved Successsfully" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Create Standard Sreen : Standard Order has been saved successfully. Read Status Message : &quot; + strStdrdOrderSaveMsg]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <Assign DisplayName="Assign out_CreatedSalesOrderNumber" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_CreatedSalesOrderNumber]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[strStdrdOrderSaveMsg.Split(" "c)(2).Trim()]</InArgument>
+                          </Assign.Value>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:LogMessage DisplayName="Log Message - Standard Order Not Saved" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_9" Level="Error" Message="[&quot;VA01 - Create Standard Sreen : Standard Order was not saved. Read Status Message : &quot; + strStdrdOrderSaveMsg]">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:LogMessage>
+                        <Throw DisplayName="Throw - Standard Order Not Saved" Exception="[New SystemException(&quot;VA01 - Create Standard Sreen : Standard Order was not saved. Read Status Message : &quot; + strStdrdOrderSaveMsg)]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="Throw_3">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Throw>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="-11, -11, 1942, 1042" FilePath="[in_Config(&quot;SAP_FilePath&quot;).ToString]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVGhD7ZY7SyNRFIAja+n+h8UXKq6o+ECygTGFlYXYCJaC4IIBRQtNLLXyuVF0wULcxpjRQrDQwhVt7EUrQciu8YXJEBNQmz2eiye44jWZxTvjjpwPviZFznfu3IRxMQzDMAzDMO8I79BKE9riEL2U/UChL5iDH0ZQcICJxoDuofQHHLSAgfFuyn7EIQsYWkBvoOSnOGCB+Ivxgv98gRjG11GqnPzOcVxAj3gDOtiiPFSmiK+lzKcYqdvhtLHrm5HFrcPE/OY+WO7GPrSPrkOjPywL/tsrza/XUO5zjNQdvIVza3vwpXcBtMFlWXTaSzz5akqVI/tyK42jM6u7UP91Gjz9PzI9ARFfRZkvIxtipcGVHajvCoKnbzFT/AVem0pKzIxsiBWKk58Kb0Nd17ds8Wd48hWUlx3ZMNXGk7cwubxt5uTPtUD4M6WZQzZQpfHkHUyEfpqJFydfTlnmwSGJtHhS16ex1J/oVRJUObZkKj6K8WWU9G+cGTe5woOj37nNrW0fPT3zJ27fHLi7Z5XY4Pue7d8mqvnDpZTzOvIKaj5oA6GINrAEyhwMAb45ysKFJ3jnS2j86ynsnrbzXegXXptiGq0GG1/mRHwRjVWHTQtELIkX2LDAMf4eCmiceixeQMTn0yjrwEEdaI9qMf4TjWAYhmEYhmGU4HLdAwUCoaAm9Q3LAAAAAElFTkSuQmCC" InformativeScreenshot="b1f2cd38378188f865958a0f40c21a20.png" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" Version="V2" />
+            </uix:NApplicationCard.TargetApp>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </uix:NApplicationCard>
+        </Sequence>
+      </uix:NCheckState.IfExists>
+      <uix:NCheckState.IfNotExists>
+        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,198.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:LogMessage DisplayName="Error Log Message" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Error" Message="[&quot;VA01 - Create Standard Order: Overview screen not loaded.&quot;]">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:LogMessage>
+          <Throw Exception="[New SystemException(&quot;VA01 - Create Standard Order: Overview screen not loaded.&quot;)]" sap:VirtualizedContainerService.HintSize="388,50.666666666666664" sap2010:WorkflowViewState.IdRef="Throw_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Throw>
+        </Sequence>
+      </uix:NCheckState.IfNotExists>
+      <uix:NCheckState.Target>
+        <uix:TargetAnchorable DesignTimeRectangle="30, 125, 1882, 46" ElementType="Toolbar" FullSelectorArgument="&lt;sap id='titl' /&gt;" Guid="58f7de60-239c-4235-bfab-09a1c9f13962" InformativeScreenshot="a171680f9ab9362a1608b00027a5a170.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
+      </uix:NCheckState.Target>
+    </uix:NCheckState>
+    <ui:LogMessage DisplayName="End Log Message" sap:VirtualizedContainerService.HintSize="1758,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;/&quot; + JobData.WorkflowName]" />
+  </Sequence>
+</Activity>

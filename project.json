@@ -1,0 +1,208 @@
+{
+  "name": "BDG_TestAutomation_Phase1",
+  "projectId": "9a4b3a28-55c8-4f47-b029-d4e6d2581275",
+  "description": "A modular and scalable test automation framework designed to validate SAP T-code workflows (e.g., VA01, VL01N, VF01) using screen-wise, reusable components. The framework supports multiple document types (e.g., OR, RE, CR), enables data-driven execution, captures dynamic outputs like document numbers, and includes robust error handling with clear logging and screenshots. Structured for easy maintenance and extension, it facilitates end-to-end regression testing and can integrate with CI/CD tools",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[3.2.1]",
+    "UiPath.Mail.Activities": "[2.4.10]",
+    "UiPath.System.Activities": "[25.8.1]",
+    "UiPath.Testing.Activities": "[25.4.1]",
+    "UiPath.UIAutomation.Activities": "[25.10.13]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.1.0",
+  "projectVersion": "1.0.214325389",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "Utils\\SAP\\Reusables\\GlobalHandler.xaml",
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "ExecutionTemplate",
+        "fileName": ".templates\\ExecutionTemplate.xaml"
+      },
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\WorkflowTemplate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1f14713a-1dbc-4676-98ca-30768af18d82",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_1.1\\TC_1.1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "325c0061-8bd9-406e-ad8a-b048269fe378",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": true,
+        "fileName": "TestCases\\TC_05\\TC_05.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b35cc0b2-d939-4974-800f-a3edda347d67",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_10\\TC_10.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d4b73593-dad8-4c0d-90b3-b7a066978308",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_02\\TC_02.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d257dc54-5e57-4ec7-ae96-7af00858b815",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_03\\TC_03.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "01a347f0-c2af-44de-b1c4-b0ac87fcc6be",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_04\\TC_04.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "53ab2d2b-58cd-42a4-a99b-0801d843ea6c",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_06\\TC_06.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d0dfc2b2-78be-4fdf-b8cc-59edfbf4edd5",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_07\\TC_07.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fd5da701-7870-484b-b34d-a45a212edd99",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_08\\TC_08.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "110a606e-4c7a-4a66-92fe-57bad6d8eddb",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_12\\TC_12.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "98c50601-7949-49a1-8af0-1c3c50d046de",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_09\\TC_09.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2c39830f-5bbc-4d77-bd8b-42fe206ad4e9",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_11\\TC_11.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a9a3fbb2-cbb2-400f-82c1-dc1936a8f1b9",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_21\\TC_21.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "58db2524-7433-41c6-9012-90b51457b56d",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_20.1\\TC_20.1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "142606c5-4fbc-4fb7-a23c-eace4a97db59",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_20.2\\TC_20.2.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c96ff62e-8570-48a3-8297-a5cf0372853b",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_22\\TC_22.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
