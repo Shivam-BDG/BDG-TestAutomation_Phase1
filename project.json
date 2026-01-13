@@ -60,25 +60,7 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_1.1\\TC_1.1.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "325c0061-8bd9-406e-ad8a-b048269fe378",
-        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "executionTemplateInvokeIsolated": true,
-        "fileName": "TestCases\\TC_05\\TC_05.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "b35cc0b2-d939-4974-800f-a3edda347d67",
-        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_10\\TC_10.xaml"
+        "fileName": "TestCases\\TC_1.1_CreateInventory.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -87,7 +69,7 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_02\\TC_02.xaml"
+        "fileName": "TestCases\\TC_02_CreateSalesOrderTypeORforWMHUManagedPlant.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -96,7 +78,7 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_03\\TC_03.xaml"
+        "fileName": "TestCases\\TC_03_CreateDeliveryDocforWMHUManagedPlant.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -105,7 +87,16 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_04\\TC_04.xaml"
+        "fileName": "TestCases\\TC_04_CreateTransferOrderforWMHUManagedPlant.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "325c0061-8bd9-406e-ad8a-b048269fe378",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": true,
+        "fileName": "TestCases\\TC_05_AssignHUsAndTransferOrderforWMHUManagedPlant.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -114,7 +105,7 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_06\\TC_06.xaml"
+        "fileName": "TestCases\\TC_06_PGIDeliveryforWMHUManagedPlant.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -123,7 +114,7 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_07\\TC_07.xaml"
+        "fileName": "TestCases\\TC_07_CreateInvoice.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -132,16 +123,7 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_08\\TC_08.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "110a606e-4c7a-4a66-92fe-57bad6d8eddb",
-        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_12\\TC_12.xaml"
+        "fileName": "TestCases\\TC_08_CreateaReturnsCreditMemoRequest.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -150,7 +132,16 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_09\\TC_09.xaml"
+        "fileName": "TestCases\\TC_09_PGIReturnsDelivery.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b35cc0b2-d939-4974-800f-a3edda347d67",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_10_CreateAReturnsCreditMemo.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -159,7 +150,16 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_11\\TC_11.xaml"
+        "fileName": "TestCases\\TC_11_CreateACreditMemoRequest.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "110a606e-4c7a-4a66-92fe-57bad6d8eddb",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_12_CreateACreditMemo.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -168,25 +168,7 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_21\\TC_21.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "58db2524-7433-41c6-9012-90b51457b56d",
-        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_20.1\\TC_20.1.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "142606c5-4fbc-4fb7-a23c-eace4a97db59",
-        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
-        "testCaseType": "TestCase",
-        "executionTemplateType": "Local",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_20.2\\TC_20.2.xaml"
+        "fileName": "TestCases\\TC_21_OTCProcessfromHUManagedPlant.xaml"
       },
       {
         "editingStatus": "Publishable",
@@ -195,7 +177,25 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCases\\TC_22\\TC_22.xaml"
+        "fileName": "TestCases\\TC_22_OTCProcessfrom3PLPlants.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "58db2524-7433-41c6-9012-90b51457b56d",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_20.1_ItemLevel_MultipleContracts_OTCFlow.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "142606c5-4fbc-4fb7-a23c-eace4a97db59",
+        "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
+        "testCaseType": "TestCase",
+        "executionTemplateType": "Local",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCases\\TC_20.2_HeaderLevel_MultipleContracts_OTCFlow.xaml"
       }
     ],
     "saveToCloud": false
