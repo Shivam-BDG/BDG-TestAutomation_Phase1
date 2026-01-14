@@ -30,5 +30,21 @@
     "UnresolvedTypeFullyQualifiedName": null,
     "Expression": "\"\\\\SAC1UISAPP50\\UiPath\\Config_Phase-1\\Config.xlsx\"",
     "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "strSAPApplicationPath",
+    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": null,
+    "IsLiteral": false
+  },
+  {
+    "Constant": false,
+    "Name": "lstAttachmentPath",
+    "TypeFullyQualifiedName": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+    "UnresolvedTypeFullyQualifiedName": null,
+    "Expression": null,
+    "IsLiteral": false
   }
 ]
