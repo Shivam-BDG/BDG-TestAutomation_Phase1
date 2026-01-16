@@ -6,7 +6,7 @@
     <x:Null />
   </VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1419.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1362</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SAP_HU_Movement_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -107,7 +107,7 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SAP_HU_Movement" sap:VirtualizedContainerService.HintSize="1078,1354.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SAP_HU_Movement" sap:VirtualizedContainerService.HintSize="1078,1297.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:CurrentJobInfo" Name="JobData" />
     </Sequence.Variables>
@@ -118,130 +118,29 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:GetCurrentJobInfo DisplayName="Get Current Job Info" sap:VirtualizedContainerService.HintSize="1016,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[JobData]" />
     <ui:LogMessage DisplayName="Start Log Message" sap:VirtualizedContainerService.HintSize="1016,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[JobData.WorkflowName]" />
-    <uix:NCheckState DisplayName="Check App State 'Pack Button'" sap:VirtualizedContainerService.HintSize="1016,865.3333333333334" sap2010:WorkflowViewState.IdRef="NCheckState_1" IsLoose="True" Version="V3">
+    <uix:NCheckState DisplayName="Check App State 'Pack Button'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1016,808" sap2010:WorkflowViewState.IdRef="NCheckState_1" IsLoose="True" Version="V3">
       <uix:NCheckState.IfExists>
-        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,612" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,554.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Inbnd Dlv. HU Mvmnt" sap:VirtualizedContainerService.HintSize="450,521.3333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="641b9b0a-e854-4aab-a755-6b58e59d5e9e" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Inbnd Dlv. HU Mvmnt" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,464" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="641b9b0a-e854-4aab-a755-6b58e59d5e9e" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,198.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,141.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                    <ui:CommentOut.Body>
-                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Material'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[in_strMaterial]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable ContentHash="kmFfYNkHhESVvrKr7eilww" DesignTimeRectangle="169, 569, 241, 31" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;sap colTooltip='Material' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV50A:1202/tblSAPMV50ATC_LIPS_OVER_INB' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;sap colTooltip='Material' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV50A:1202/tblSAPMV50ATC_LIPS_OVER_INB' /&gt;" Guid="40473dc1-92fb-4ca9-8855-b8c461ab9c11" ImageBase64="" InformativeScreenshot="4c742a3d424a21ae9110de98fab0ded5.png" Reference="4eDhVX_v00eu3ciUYy__nw/h5xYZnmK5Uy30_fwjxYJWQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Inbnd Dlv. HU Mvmnt 186207873 Change: Overview' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                          <uix:NTypeInto.VerifyOptions>
-                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                              <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                <InArgument x:TypeArguments="x:Boolean" />
-                              </uix:VerifyExecutionTypeIntoOptions.Retry>
-                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                <InArgument x:TypeArguments="x:Double" />
-                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            </uix:VerifyExecutionTypeIntoOptions>
-                          </uix:NTypeInto.VerifyOptions>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Delivery Quantity'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Text="[in_strDeliveryQuantity.ToString]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable ContentHash="9-e5Q9k6lkeAVRiWzI-sTA" DesignTimeRectangle="411, 569, 384, 31" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV50A:1202/tblSAPMV50ATC_LIPS_OVER_INB' tableCol='2' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV50A:1202/tblSAPMV50ATC_LIPS_OVER_INB' /&gt;" Guid="e8a2837b-6586-4d73-b3ac-6ea896c1390d" InformativeScreenshot="76977d9ddfa48844e4e5c40d6792f13f.png" Reference="4eDhVX_v00eu3ciUYy__nw/lTG6zbkSuUG5Mj8GejujoA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Inbnd Dlv. HU Mvmnt 186207873 Change: Overview' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                          <uix:NTypeInto.VerifyOptions>
-                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                              <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                <InArgument x:TypeArguments="x:Boolean" />
-                              </uix:VerifyExecutionTypeIntoOptions.Retry>
-                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                <InArgument x:TypeArguments="x:Double" />
-                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            </uix:VerifyExecutionTypeIntoOptions>
-                          </uix:NTypeInto.VerifyOptions>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Plant'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Text="[in_strPlant]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable ContentHash="kBTX2g5Wc0SpDNcbaeSGUw" DesignTimeRectangle="544, 569, 59, 31" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;sap colTooltip='Plant' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV50A:1202/tblSAPMV50ATC_LIPS_OVER_INB' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;sap colTooltip='Plant' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV50A:1202/tblSAPMV50ATC_LIPS_OVER_INB' /&gt;" Guid="9895b01a-aebc-4769-9aef-b84cdfacdbc9" InformativeScreenshot="26e68c323a5c28bd0834a6e28097ea67.png" Reference="4eDhVX_v00eu3ciUYy__nw/SPC8SZ4mIEGWvARo1v8Jhw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Inbnd Dlv. HU Mvmnt 186207873 Change: Overview' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                          <uix:NTypeInto.VerifyOptions>
-                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                              <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                <InArgument x:TypeArguments="x:Boolean" />
-                              </uix:VerifyExecutionTypeIntoOptions.Retry>
-                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                <InArgument x:TypeArguments="x:Double" />
-                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            </uix:VerifyExecutionTypeIntoOptions>
-                          </uix:NTypeInto.VerifyOptions>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </uix:NTypeInto>
-                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Storage Location'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Text="[in_strStorageLocation]" Version="V3">
-                          <uix:NTypeInto.Target>
-                            <uix:TargetAnchorable ContentHash="vLGGcNSxWUKsMPISU2YCAQ" DesignTimeRectangle="604, 569, 59, 31" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;sap colTooltip='Storage Location' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV50A:1202/tblSAPMV50ATC_LIPS_OVER_INB' tableRow='0' /&gt;" FuzzySelectorArgument="&lt;sap colTooltip='Storage Location' id='usr/tabsTAXI_TABSTRIP_OVERVIEW/tabpT\01/ssubSUBSCREEN_BODY:SAPMV50A:1202/tblSAPMV50ATC_LIPS_OVER_INB' /&gt;" Guid="ad7a3e44-14b8-4869-9270-ec7e4d6eea06" InformativeScreenshot="cfc7c97b6df6a9d494e544848134a0c0.png" Reference="4eDhVX_v00eu3ciUYy__nw/vOZcO9kH9keDDSJrcBUMDw" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Inbnd Dlv. HU Mvmnt 186207873 Change: Overview' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                          </uix:NTypeInto.Target>
-                          <uix:NTypeInto.VerifyOptions>
-                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                              <uix:VerifyExecutionTypeIntoOptions.Retry>
-                                <InArgument x:TypeArguments="x:Boolean" />
-                              </uix:VerifyExecutionTypeIntoOptions.Retry>
-                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                                <InArgument x:TypeArguments="x:Double" />
-                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                            </uix:VerifyExecutionTypeIntoOptions>
-                          </uix:NTypeInto.VerifyOptions>
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </uix:NTypeInto>
-                      </Sequence>
-                    </ui:CommentOut.Body>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                  </ui:CommentOut>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pack Button'" sap:VirtualizedContainerService.HintSize="354,50.666666666666664" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="641b9b0a-e854-4aab-a755-6b58e59d5e9e" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pack Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="354,50.666666666666664" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="641b9b0a-e854-4aab-a755-6b58e59d5e9e" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable ContentHash="HFAO7r8pFEy8xQzK2A4JEA" DesignTimeRectangle="284, 179, 28, 31" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[1]/btn[18]' /&gt;" FuzzySelectorArgument="&lt;sap id='tbar[1]/btn[18]' /&gt;" Guid="fff3ddf3-4cd0-4c0c-a472-bae981fe1955" ImageBase64="" InformativeScreenshot="af9c5c1fb22a808fadadfbde1f8f1a08.png" Reference="4eDhVX_v00eu3ciUYy__nw/rp_ejjqNtE-Ij7wCCCNqgA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Inbnd Dlv. HU Mvmnt * Change: Overview' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                     </uix:NClick.Target>
@@ -266,7 +165,7 @@
               </ActivityAction>
             </uix:NApplicationCard.Body>
             <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="0, 0, 0, 0" ContentHash="8nQ8HJ0hmkKxYZEsBJy7Ew" FilePath="[in_strSAPApplicationPath]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVGhD7ZY7SyNRFIAja+n+h8UXKq6o+ECygTGFlYXYCJaC4IIBRQtNLLXyuVF0wULcxpjRQrDQwhVt7EUrQciu8YXJEBNQmz2eiye44jWZxTvjjpwPviZFznfu3IRxMQzDMAzDMO8I79BKE9riEL2U/UChL5iDH0ZQcICJxoDuofQHHLSAgfFuyn7EIQsYWkBvoOSnOGCB+Ivxgv98gRjG11GqnPzOcVxAj3gDOtiiPFSmiK+lzKcYqdvhtLHrm5HFrcPE/OY+WO7GPrSPrkOjPywL/tsrza/XUO5zjNQdvIVza3vwpXcBtMFlWXTaSzz5akqVI/tyK42jM6u7UP91Gjz9PzI9ARFfRZkvIxtipcGVHajvCoKnbzFT/AVem0pKzIxsiBWKk58Kb0Nd17ds8Wd48hWUlx3ZMNXGk7cwubxt5uTPtUD4M6WZQzZQpfHkHUyEfpqJFydfTlnmwSGJtHhS16ex1J/oVRJUObZkKj6K8WWU9G+cGTe5woOj37nNrW0fPT3zJ27fHLi7Z5XY4Pue7d8mqvnDpZTzOvIKaj5oA6GINrAEyhwMAb45ysKFJ3jnS2j86ynsnrbzXegXXptiGq0GG1/mRHwRjVWHTQtELIkX2LDAMf4eCmiceixeQMTn0yjrwEEdaI9qMf4TjWAYhmEYhmGU4HLdAwUCoaAm9Q3LAAAAAElFTkSuQmCC" InformativeScreenshot="d747a8a1ce0c30776d615214c119b2d2.png" Reference="4eDhVX_v00eu3ciUYy__nw/P8Vl_SeiuU6LjoT4O-OBmw" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Inbnd Dlv. HU Mvmnt * Change: Overview' /&gt;" Title="Inbnd Dlv. HU Mvmnt 186207871 Change: Overview" />
+              <uix:TargetApp Area="0, 0, 0, 0" ContentHash="8nQ8HJ0hmkKxYZEsBJy7Ew" FilePath="[in_strSAPApplicationPath]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVGhD7ZY7SyNRFIAja+n+h8UXKq6o+ECygTGFlYXYCJaC4IIBRQtNLLXyuVF0wULcxpjRQrDQwhVt7EUrQciu8YXJEBNQmz2eiye44jWZxTvjjpwPviZFznfu3IRxMQzDMAzDMO8I79BKE9riEL2U/UChL5iDH0ZQcICJxoDuofQHHLSAgfFuyn7EIQsYWkBvoOSnOGCB+Ivxgv98gRjG11GqnPzOcVxAj3gDOtiiPFSmiK+lzKcYqdvhtLHrm5HFrcPE/OY+WO7GPrSPrkOjPywL/tsrza/XUO5zjNQdvIVza3vwpXcBtMFlWXTaSzz5akqVI/tyK42jM6u7UP91Gjz9PzI9ARFfRZkvIxtipcGVHajvCoKnbzFT/AVem0pKzIxsiBWKk58Kb0Nd17ds8Wd48hWUlx3ZMNXGk7cwubxt5uTPtUD4M6WZQzZQpfHkHUyEfpqJFydfTlnmwSGJtHhS16ex1J/oVRJUObZkKj6K8WWU9G+cGTe5woOj37nNrW0fPT3zJ27fHLi7Z5XY4Pue7d8mqvnDpZTzOvIKaj5oA6GINrAEyhwMAb45ysKFJ3jnS2j86ynsnrbzXegXXptiGq0GG1/mRHwRjVWHTQtELIkX2LDAMf4eCmiceixeQMTn0yjrwEEdaI9qMf4TjWAYhmEYhmGU4HLdAwUCoaAm9Q3LAAAAAElFTkSuQmCC" InformativeScreenshot="d747a8a1ce0c30776d615214c119b2d2.png" Reference="4eDhVX_v00eu3ciUYy__nw/P8Vl_SeiuU6LjoT4O-OBmw" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Inbnd Dlv. HU Mvmnt * Change: Overview' /&gt;" />
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
         </Sequence>

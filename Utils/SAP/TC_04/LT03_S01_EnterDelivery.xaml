@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1152,1475.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,1476.6666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>LT03_S01_EnterDelivery_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -104,7 +104,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="LT03_S01_EnterDelivery" sap:VirtualizedContainerService.HintSize="1078,1410.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="LT03_S01_EnterDelivery" sap:VirtualizedContainerService.HintSize="1078,1412" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:CurrentJobInfo" Name="JobData" />
     </Sequence.Variables>
@@ -115,7 +115,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:GetCurrentJobInfo DisplayName="Get Current Job Info" sap:VirtualizedContainerService.HintSize="1016,57.333333333333336" sap2010:WorkflowViewState.IdRef="GetCurrentJobInfo_1" Result="[JobData]" />
     <ui:LogMessage DisplayName="Start Log Message" sap:VirtualizedContainerService.HintSize="1016,176.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[JobData.WorkflowName]" />
-    <uix:NCheckState DisplayName="Check App State 'Enter Delivery Number'" sap:VirtualizedContainerService.HintSize="1016,922.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" IsLoose="True" Version="V3">
+    <uix:NCheckState DisplayName="Check App State 'Enter Delivery Number'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="1016,922.6666666666666" sap2010:WorkflowViewState.IdRef="NCheckState_1" IsLoose="True" Version="V3">
       <uix:NCheckState.IfExists>
         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="512,669.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
@@ -123,7 +123,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Create TO Initial screen" sap:VirtualizedContainerService.HintSize="450,578.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1e2278ca-6373-4750-b9de-f0e873a7dede" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Create TO Initial screen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="450,578.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="1e2278ca-6373-4750-b9de-f0e873a7dede" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -135,9 +135,9 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Warehouse'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Text="[in_WareHouseNumber]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Warehouse'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="1e2278ca-6373-4750-b9de-f0e873a7dede" Text="[in_WareHouseNumber]" Version="V3">
                     <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable ContentHash="soRw8VWErkui5EyNbC87WA" DesignTimeRectangle="322, 300, 51, 31" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtLTAK-LGNUM' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtLTAK-LGNUM' /&gt;" Guid="95d90321-441a-4bec-9648-d4bbd54e2e7d" InformativeScreenshot="47382a1c0cfa046251e36fe85c8d0cbf.png" Reference="4eDhVX_v00eu3ciUYy__nw/T8naKEJFLUyC7sQRGG9afA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      <uix:TargetAnchorable ContentHash="soRw8VWErkui5EyNbC87WA" DesignTimeRectangle="322, 300, 51, 31" ElementType="InputBox" FullSelectorArgument="&lt;sap tooltip='Warehouse Number / Warehouse Complex' type='GuiCTextField' /&gt;" Guid="95d90321-441a-4bec-9648-d4bbd54e2e7d" InformativeScreenshot="430beba715a117fc83a26fea006043f0.png" Reference="4eDhVX_v00eu3ciUYy__nw/T8naKEJFLUyC7sQRGG9afA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                     <uix:NTypeInto.VerifyOptions>
                       <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
@@ -156,9 +156,9 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Delivery Number'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Text="[in_DeliveryNumber]" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Enter Delivery Number'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="1e2278ca-6373-4750-b9de-f0e873a7dede" Text="[in_DeliveryNumber]" Version="V3">
                     <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable ContentHash="VoRQ82AWzEmPdapL51Wcfg" DesignTimeRectangle="322, 368, 168, 31" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtVBLKK-VBELN' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtVBLKK-VBELN' /&gt;" Guid="45925068-0c6e-4dc4-85f4-0fe8e96b7f60" InformativeScreenshot="debb2cd7d3cbf63f7c065ff1f7be9644.png" Reference="4eDhVX_v00eu3ciUYy__nw/PD_3vtg3dUmQwZxDrcLaKA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      <uix:TargetAnchorable ContentHash="VoRQ82AWzEmPdapL51Wcfg" DesignTimeRectangle="322, 368, 142, 31" ElementType="InputBox" FullSelectorArgument="&lt;sap tooltip='Delivery' type='GuiCTextField' /&gt;" Guid="45925068-0c6e-4dc4-85f4-0fe8e96b7f60" InformativeScreenshot="5666b2b2516db1072bd608201e9b9cf3.png" Reference="4eDhVX_v00eu3ciUYy__nw/PD_3vtg3dUmQwZxDrcLaKA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                     </uix:NTypeInto.Target>
                     <uix:NTypeInto.VerifyOptions>
                       <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
@@ -177,9 +177,9 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Continue (Enter)'" sap:VirtualizedContainerService.HintSize="354,50.666666666666664" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button Continue (Enter)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="354,50.666666666666664" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1e2278ca-6373-4750-b9de-f0e873a7dede" Version="V3">
                     <uix:NClick.Target>
-                      <uix:TargetAnchorable ContentHash="vKAcwZegmEOyF0Wf319p3A" DesignTimeRectangle="38, 72, 33, 33" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" FuzzySelectorArgument="&lt;sap id='tbar[0]/btn[0]' /&gt;" Guid="08989042-a40b-4a90-86f3-9fb28a7adda8" ImageBase64="" InformativeScreenshot="d580adad0b8de25c8f13aafeb82fad20.png" Reference="4eDhVX_v00eu3ciUYy__nw/UbiPO6Y6bUWXZx4l_J4AGQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='*' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                      <uix:TargetAnchorable ContentHash="vKAcwZegmEOyF0Wf319p3A" DesignTimeRectangle="38, 72, 33, 33" ElementType="Button" FullSelectorArgument="&lt;sap tooltip='Enter' type='GuiButton' /&gt;" Guid="08989042-a40b-4a90-86f3-9fb28a7adda8" InformativeScreenshot="c937f655f2534d0c376993c5b5711838.png" Reference="4eDhVX_v00eu3ciUYy__nw/UbiPO6Y6bUWXZx4l_J4AGQ" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='*' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
                     </uix:NClick.Target>
                     <uix:NClick.VerifyOptions>
                       <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -202,7 +202,7 @@
               </ActivityAction>
             </uix:NApplicationCard.Body>
             <uix:NApplicationCard.TargetApp>
-              <uix:TargetApp Area="0, 0, 0, 0" ContentHash="nW8crGkxpUSTVy3GIRbn1Q" FilePath="[in_Config(&quot;SAP_FilePath&quot;).ToString]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVGhD7ZY7SyNRFIAja+n+h8UXKq6o+ECygTGFlYXYCJaC4IIBRQtNLLXyuVF0wULcxpjRQrDQwhVt7EUrQciu8YXJEBNQmz2eiye44jWZxTvjjpwPviZFznfu3IRxMQzDMAzDMO8I79BKE9riEL2U/UChL5iDH0ZQcICJxoDuofQHHLSAgfFuyn7EIQsYWkBvoOSnOGCB+Ivxgv98gRjG11GqnPzOcVxAj3gDOtiiPFSmiK+lzKcYqdvhtLHrm5HFrcPE/OY+WO7GPrSPrkOjPywL/tsrza/XUO5zjNQdvIVza3vwpXcBtMFlWXTaSzz5akqVI/tyK42jM6u7UP91Gjz9PzI9ARFfRZkvIxtipcGVHajvCoKnbzFT/AVem0pKzIxsiBWKk58Kb0Nd17ds8Wd48hWUlx3ZMNXGk7cwubxt5uTPtUD4M6WZQzZQpfHkHUyEfpqJFydfTlnmwSGJtHhS16ex1J/oVRJUObZkKj6K8WWU9G+cGTe5woOj37nNrW0fPT3zJ27fHLi7Z5XY4Pue7d8mqvnDpZTzOvIKaj5oA6GINrAEyhwMAb45ysKFJ3jnS2j86ynsnrbzXegXXptiGq0GG1/mRHwRjVWHTQtELIkX2LDAMf4eCmiceixeQMTn0yjrwEEdaI9qMf4TjWAYhmEYhmGU4HLdAwUCoaAm9Q3LAAAAAElFTkSuQmCC" InformativeScreenshot="5273830bda0f9f2d3cfff076614d45ca.png" Reference="4eDhVX_v00eu3ciUYy__nw/pY7CtBU1i0KVxHHeYwsauA" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" Title="Create Transfer Order for Delivery Note: Initial Screen" />
+              <uix:TargetApp Area="0, 0, 0, 0" ContentHash="nW8crGkxpUSTVy3GIRbn1Q" FilePath="[in_Config(&quot;SAP_FilePath&quot;).ToString]" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAH/SURBVGhD7ZY7SyNRFIAja+n+h8UXKq6o+ECygTGFlYXYCJaC4IIBRQtNLLXyuVF0wULcxpjRQrDQwhVt7EUrQciu8YXJEBNQmz2eiye44jWZxTvjjpwPviZFznfu3IRxMQzDMAzDMO8I79BKE9riEL2U/UChL5iDH0ZQcICJxoDuofQHHLSAgfFuyn7EIQsYWkBvoOSnOGCB+Ivxgv98gRjG11GqnPzOcVxAj3gDOtiiPFSmiK+lzKcYqdvhtLHrm5HFrcPE/OY+WO7GPrSPrkOjPywL/tsrza/XUO5zjNQdvIVza3vwpXcBtMFlWXTaSzz5akqVI/tyK42jM6u7UP91Gjz9PzI9ARFfRZkvIxtipcGVHajvCoKnbzFT/AVem0pKzIxsiBWKk58Kb0Nd17ds8Wd48hWUlx3ZMNXGk7cwubxt5uTPtUD4M6WZQzZQpfHkHUyEfpqJFydfTlnmwSGJtHhS16ex1J/oVRJUObZkKj6K8WWU9G+cGTe5woOj37nNrW0fPT3zJ27fHLi7Z5XY4Pue7d8mqvnDpZTzOvIKaj5oA6GINrAEyhwMAb45ysKFJ3jnS2j86ynsnrbzXegXXptiGq0GG1/mRHwRjVWHTQtELIkX2LDAMf4eCmiceixeQMTn0yjrwEEdaI9qMf4TjWAYhmEYhmGU4HLdAwUCoaAm9Q3LAAAAAElFTkSuQmCC" InformativeScreenshot="5273830bda0f9f2d3cfff076614d45ca.png" Reference="4eDhVX_v00eu3ciUYy__nw/pY7CtBU1i0KVxHHeYwsauA" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" />
             </uix:NApplicationCard.TargetApp>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -239,9 +239,9 @@
         </Sequence>
       </uix:NCheckState.IfNotExists>
       <uix:NCheckState.Target>
-        <uix:TargetAnchorable ContentHash="VoRQ82AWzEmPdapL51Wcfg" DesignTimeRectangle="322, 368, 168, 31" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtVBLKK-VBELN' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtVBLKK-VBELN' /&gt;" Guid="45925068-0c6e-4dc4-85f4-0fe8e96b7f60" InformativeScreenshot="debb2cd7d3cbf63f7c065ff1f7be9644.png" Reference="4eDhVX_v00eu3ciUYy__nw/PD_3vtg3dUmQwZxDrcLaKA" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+        <uix:TargetAnchorable DesignTimeRectangle="36, 300, 272, 31" ElementType="Text" FullSelectorArgument="&lt;sap text='Warehouse Number' type='GuiLabel' /&gt;" Guid="33bdebbb-c69b-4aa3-a170-57f87b313a45" InformativeScreenshot="2afeecc1fb06cadcaace32da5f6c7138.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Transfer Order for Delivery Note: Initial Screen' /&gt;" SearchSteps="Selector" Version="V6" Visibility="Interactive" WaitForReadyArgument="Interactive" />
       </uix:NCheckState.Target>
     </uix:NCheckState>
-    <ui:LogMessage DisplayName="End Log Message" sap:VirtualizedContainerService.HintSize="1016,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;/&quot; + JobData.WorkflowName]" />
+    <ui:LogMessage DisplayName="End Log Message" sap:VirtualizedContainerService.HintSize="1016,167.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;/&quot; + JobData.WorkflowName]" />
   </Sequence>
 </Activity>
