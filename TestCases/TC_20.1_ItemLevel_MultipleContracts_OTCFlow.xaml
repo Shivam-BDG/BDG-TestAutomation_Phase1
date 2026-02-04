@@ -35,7 +35,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1152,10081.333333333334</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1152,10280.666666666666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TC_20.1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -156,7 +156,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="MIGO – Post goods movement (GR, GI, Transfer). Validate stock update &amp; accounting.&#xA;VL32N (PGR) – Post GR for inbound delivery. Confirm stock &amp; inbound delivery status.&#xA;VA01 – Create sales order. Validate pricing, ATP, and order creation.&#xA;VA02 – Change sales order. Check updates to quantity, dates, pricing, or rejection.&#xA;VL01N – Create outbound delivery from SO. Validate picking, packing, shipping data.&#xA;If WM manged plants so it will run LT03 to create and confirm the TO.&#xA;VF01 – Create billing document. Ensure correct invoice, pricing, and FI posting.&#xA;&#xA;Note: This test case is for the item-level muliple contracts." DisplayName="TC_20.1" sap:VirtualizedContainerService.HintSize="871.3333333333334,10016.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_5">
+  <Sequence sap2010:Annotation.AnnotationText="MIGO – Post goods movement (GR, GI, Transfer). Validate stock update &amp; accounting.&#xA;VL32N (PGR) – Post GR for inbound delivery. Confirm stock &amp; inbound delivery status.&#xA;VA01 – Create sales order. Validate pricing, ATP, and order creation.&#xA;VA02 – Change sales order. Check updates to quantity, dates, pricing, or rejection.&#xA;VL01N – Create outbound delivery from SO. Validate picking, packing, shipping data.&#xA;If WM manged plants so it will run LT03 to create and confirm the TO.&#xA;VF01 – Create billing document. Ensure correct invoice, pricing, and FI posting.&#xA;&#xA;Note: This test case is for the item-level muliple contracts." DisplayName="TC_20.1" sap:VirtualizedContainerService.HintSize="871.3333333333334,10216" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strScreenshotPath" />
       <Variable x:TypeArguments="x:String" Name="strMailBody" />
@@ -191,7 +191,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="1.  The bot initializes and Assign variables and paths, reads input Excel file with &quot;SimpleFields&quot; and &quot;LineItems&quot; sheets, maps data using &quot;ReferenceID&quot;.&#xA;2. Prepare the Execution Summary and Output Schemas, Clean output, screenshot folders and Logs into the SAP." DisplayName="... Given" sap:VirtualizedContainerService.HintSize="809.3333333333334,3584.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence sap2010:Annotation.AnnotationText="1.  The bot initializes and Assign variables and paths, reads input Excel file with &quot;SimpleFields&quot; and &quot;LineItems&quot; sheets, maps data using &quot;ReferenceID&quot;.&#xA;2. Prepare the Execution Summary and Output Schemas, Clean output, screenshot folders and Logs into the SAP." DisplayName="... Given" sap:VirtualizedContainerService.HintSize="809.3333333333334,3355.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strAssetResult" />
         <Variable x:TypeArguments="x:String" Name="strTargetName" />
@@ -258,154 +258,13 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:LookupDataTable>
       </Sequence>
-      <Sequence DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="558,2696" sap2010:WorkflowViewState.IdRef="Sequence_21">
+      <Sequence DisplayName="Initialization" sap:VirtualizedContainerService.HintSize="558,2466.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_21">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="496,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-          <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,181.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_132">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Sequence sap2010:Annotation.AnnotationText="Assign all the path by following the folder structure using the config value and replace the [TestCaseName]  by the workflow name." DisplayName="Assign Paths" sap:VirtualizedContainerService.HintSize="450,93.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_16">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                  <ui:CommentOut.Body>
-                    <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,196" sap2010:WorkflowViewState.IdRef="Sequence_131">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <Assign DisplayName="Assign strTestCaseFilePath" sap:VirtualizedContainerService.HintSize="434,108" sap2010:WorkflowViewState.IdRef="Assign_1">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:String">[strTestCaseFilePath]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">[io_Config("TestCaseFilePath").ToString.Replace("[TestCaseName]",GlobalVariablesNamespace.GlobalVariables.JobData.WorkflowName).Replace("[Username]",Environment.UserName)]</InArgument>
-                        </Assign.Value>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </Assign>
-                    </Sequence>
-                  </ui:CommentOut.Body>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:CommentOut>
-                <Assign DisplayName="Assign strTargetFilePath" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_2">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[strTargetFilePath]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[io_Config("TestCaseFilePath").ToString.Replace("[TestCaseName]",strTargetName).Replace("[Username]",Environment.UserName)]</InArgument>
-                  </Assign.Value>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Assign>
-                <Assign DisplayName="Assign strInputTemplateFilePath" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_3">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[strInputTemplateFilePath]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[io_Config("InputTemplateFilePath").ToString.Replace("[TestCaseName]",GlobalVariablesNamespace.GlobalVariables.JobData.WorkflowName).Replace("[Username]",Environment.UserName)]</InArgument>
-                  </Assign.Value>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Assign>
-                <Assign DisplayName="Assign strExecutiontemplatePath" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_4">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[strExecutiontemplatePath]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[io_Config("ExecutionTemplatePath").ToString.Replace("[TestCaseName]",GlobalVariablesNamespace.GlobalVariables.JobData.WorkflowName).Replace("[Username]",Environment.UserName)]</InArgument>
-                  </Assign.Value>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Assign>
-                <Assign DisplayName="Assign strExecutionSummaryPath" sap:VirtualizedContainerService.HintSize="434,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_5">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[strExecutionSummaryPath]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[io_Config("ExecutionReportPath").ToString.Replace("[TestCaseName]",GlobalVariablesNamespace.GlobalVariables.JobData.WorkflowName).Replace("[Year]",system.DateTime.now.ToString("yyyy")).Replace("[Username]",Environment.UserName)]</InArgument>
-                  </Assign.Value>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Assign>
-                <Assign DisplayName="Assign strScreenshotPath" sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_6">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[strScreenshotPath]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[io_Config("ScreenShotFolderPath").ToString.Replace("[TestCaseName]",GlobalVariablesNamespace.GlobalVariables.JobData.WorkflowName).Replace("[Username]",Environment.UserName)]</InArgument>
-                  </Assign.Value>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Assign>
-                <Assign DisplayName="Assign StrOutputFilePath" sap:VirtualizedContainerService.HintSize="434,48" sap2010:WorkflowViewState.IdRef="Assign_7">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[StrOutputFilePath]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">[io_Config("OutputFilePath").ToString.Replace("[TestCaseName]",GlobalVariablesNamespace.GlobalVariables.JobData.WorkflowName).Replace("[Username]",Environment.UserName)]</InArgument>
-                  </Assign.Value>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Assign>
-              </Sequence>
-            </Sequence>
-          </ui:CommentOut.Body>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:CommentOut>
         <Assign DisplayName="Assign strSAPApplicationPath" sap:VirtualizedContainerService.HintSize="496,57.333333333333336" sap2010:WorkflowViewState.IdRef="Assign_8">
           <Assign.To>
             <OutArgument x:TypeArguments="x:String">[strSAPApplicationPath]</OutArgument>
@@ -434,75 +293,6 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </Assign>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="496,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-          <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_133">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DeleteFilesAndFolder - Invoke Workflow File (Utils\Generic\DeleteFilesAndFolder.xaml)" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Utils\Generic\DeleteFilesAndFolder.xaml">
-                <ui:InvokeWorkflowFile.Arguments>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_OutputFilePath">[strOutputFilepath]</InArgument>
-                  <InArgument x:TypeArguments="x:String" x:Key="in_ScreenshotPath">[strScreenshotPath]</InArgument>
-                </ui:InvokeWorkflowFile.Arguments>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:InvokeWorkflowFile>
-            </Sequence>
-          </ui:CommentOut.Body>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:CommentOut>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="496,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_4">
-          <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,136" sap2010:WorkflowViewState.IdRef="Sequence_134">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Read Input File" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_17">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Util_GetDataFromInputFile - Invoke Workflow File (Utils\Generic\Util_GetDataFromInputFile.xaml)" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Utils\Generic\Util_GetDataFromInputFile.xaml">
-                  <ui:InvokeWorkflowFile.Arguments>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_strInputFilePath">[strTestCaseFilePath]</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_strSimpleFieldSheetName">SimpleFields</InArgument>
-                    <InArgument x:TypeArguments="x:String" x:Key="in_strLineItemsSheetName">LineItems</InArgument>
-                    <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtSimpleFields">[DTHeaderData]</OutArgument>
-                    <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtLineItems">[DTLineItems]</OutArgument>
-                  </ui:InvokeWorkflowFile.Arguments>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:InvokeWorkflowFile>
-              </Sequence>
-            </Sequence>
-          </ui:CommentOut.Body>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:CommentOut>
         <Sequence sap2010:Annotation.AnnotationText="Creating the schema for Execution Summary cloning the headers of input sheet.&#xA;Added the Delivery Number and Status Column for the tracking purpose.&#xA;The Status column will be removed while creating the Ouput file as it will be used as input file for the next test case." DisplayName="Create Execution Summary Schema" sap:VirtualizedContainerService.HintSize="496,753.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_18">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -581,7 +371,7 @@
             </sap:WorkflowViewStateService.ViewState>
           </ui:AddDataColumn>
         </Sequence>
-        <Sequence DisplayName="Line item schema" sap:VirtualizedContainerService.HintSize="496,792" sap2010:WorkflowViewState.IdRef="Sequence_20">
+        <Sequence DisplayName="Line item schema" sap:VirtualizedContainerService.HintSize="496,782.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_20">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -633,35 +423,6 @@
             </sap:WorkflowViewStateService.ViewState>
           </Assign>
         </Sequence>
-        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="496,48" sap2010:WorkflowViewState.IdRef="CommentOut_5">
-          <ui:CommentOut.Body>
-            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,256" sap2010:WorkflowViewState.IdRef="Sequence_135">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SAP_Login - Invoke Workflow File (Utils\SAP\SAP_Login.xaml)" sap:VirtualizedContainerService.HintSize="354,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Utils\SAP\Reusables\SAP_Login.xaml">
-                <ui:InvokeWorkflowFile.Arguments>
-                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[io_Config]</InArgument>
-                  <OutArgument x:TypeArguments="x:Boolean" x:Key="out_SAPLoginSuccess" />
-                </ui:InvokeWorkflowFile.Arguments>
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-              </ui:InvokeWorkflowFile>
-            </Sequence>
-          </ui:CommentOut.Body>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:CommentOut>
       </Sequence>
     </Sequence>
     <Sequence sap2010:Annotation.AnnotationText="It loops through each row in &quot;SimpleFields&quot;, filters matching line items, performs all required transactions, and logs assertion results (Pass/Fail) with screenshots." DisplayName="... When" sap:VirtualizedContainerService.HintSize="809.3333333333334,5178.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_71">
@@ -2837,7 +2598,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachRow>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="1. A consolidated output file and summary file is generated, and a summary email is sent to stakeholders.&#xA;3. Update ExecutionStatus Asset related to current Test Case basis on Output." DisplayName="... Then" sap:VirtualizedContainerService.HintSize="809.3333333333334,1003.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_11">
+    <Sequence sap2010:Annotation.AnnotationText="1. A consolidated output file and summary file is generated, and a summary email is sent to stakeholders.&#xA;3. Update ExecutionStatus Asset related to current Test Case basis on Output." DisplayName="... Then" sap:VirtualizedContainerService.HintSize="809.3333333333334,1432" sap2010:WorkflowViewState.IdRef="Sequence_11">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Boolean" Name="boolExecutionStatus" />
       </Sequence.Variables>
@@ -2848,188 +2609,157 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If Condition="[DTExecutionSummary.RowCount&gt;0]" DisplayName="If Execution summary has Data?" sap:VirtualizedContainerService.HintSize="450,448" sap2010:WorkflowViewState.IdRef="If_12">
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_136">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[DTExecutionSummary.RowCount&gt;0]" DisplayName="If Execution summary has Data?" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="If_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,370.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateExecutionDataSummary - Invoke Workflow File (Utils\Generic\CreateExecutionDataSummary.xaml)" sap:VirtualizedContainerService.HintSize="354,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_37" UnSafe="False" WorkflowFileName="Utils\Generic\CreateExecutionDataSummary.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strFolderPath">[strExecutionSummaryPath]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strTestCaseName">[JobData.WorkflowName]</InArgument>
+                      <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtFinal">[DTExecutionSummary]</InArgument>
+                      <OutArgument x:TypeArguments="x:String" x:Key="in_strExecutionSummaryReportFilePath">[strExecutionSummaryPath]</OutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadMailDraft - Invoke Workflow File (ReadMailDraft.xaml)" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="Utils\Generic\ReadMailDraft.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strFilePath">[io_Config("GenericDraftPath").tostring]</InArgument>
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_strMailDraft">[strMailBody]</OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strReplaceText">[JobData.WorkflowName]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strProcessName">[io_Config("ProcessName").tostring]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strException" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailExecutionSummaryReport - Invoke Workflow File (Utils\Generic\SendEmailExecutionSummaryReport.xaml)" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_39" UnSafe="False" WorkflowFileName="Utils\Generic\SendEmailExecutionSummaryReport.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_MailCC">[io_Config("Mail CC").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_MailTo">[io_Config("Mail To").tostring]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_MailAccount">[io_Config("Mail Account").tostring]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_AttachmentPath">[strExecutionSummaryPath]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SubjectLine">[io_Config("GenericSubject").tostring.replace(" [TestCaseName]",jobdata.WorkflowName)]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_BodyMessage">[strMailBody]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadMailDraft - Invoke Workflow File (ReadMailDraft.xaml)" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="Utils\Generic\ReadMailDraft.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strFilePath">[io_Config("NoDataDraftPath").tostring]</InArgument>
+                      <OutArgument x:TypeArguments="x:String" x:Key="out_strMailDraft">[strMailBody]</OutArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strReplaceText">[JobData.WorkflowName]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strProcessName">[io_Config("ProcessName").tostring]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_strException" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailExecutionSummaryReport - Invoke Workflow File (Utils\Generic\SendEmailExecutionSummaryReport.xaml)" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="Utils\Generic\SendEmailExecutionSummaryReport.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_MailCC">[io_Config("Mail CC").ToString]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_MailTo">[io_Config("Mail To").tostring]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_MailAccount">[io_Config("Mail Account").tostring]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_AttachmentPath" />
+                      <InArgument x:TypeArguments="x:String" x:Key="in_SubjectLine">[io_Config("NoDataSubject").tostring.replace(" [TestCaseName]",jobdata.WorkflowName)]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_BodyMessage">[strMailBody]</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <Sequence DisplayName="Write Ouput data Sequence" sap:VirtualizedContainerService.HintSize="450,406.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_66">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,250.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_64">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CreateExecutionDataSummary - Invoke Workflow File (Utils\Generic\CreateExecutionDataSummary.xaml)" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_37" UnSafe="False" WorkflowFileName="Utils\Generic\CreateExecutionDataSummary.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strFolderPath">[strExecutionSummaryPath]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strTestCaseName">[JobData.WorkflowName]</InArgument>
-                <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtFinal">[DTExecutionSummary]</InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="in_strExecutionSummaryReportFilePath">[strExecutionSummaryPath]</OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strExecutionTemplatePath">[strExecutionTemplatePath]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadMailDraft - Invoke Workflow File (ReadMailDraft.xaml)" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="Utils\Generic\ReadMailDraft.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strFilePath">[io_Config("GenericDraftPath").tostring]</InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_strMailDraft">[strMailBody]</OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strReplaceText">[JobData.WorkflowName]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strProcessName">[io_Config("ProcessName").tostring]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strException" />
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailExecutionSummaryReport - Invoke Workflow File (Utils\Generic\SendEmailExecutionSummaryReport.xaml)" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_39" UnSafe="False" WorkflowFileName="Utils\Generic\SendEmailExecutionSummaryReport.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_MailCC">[io_Config("Mail CC").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_MailTo">[io_Config("Mail To").tostring]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_MailAccount">[io_Config("Mail Account").tostring]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_AttachmentPath">[strExecutionSummaryPath]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_SubjectLine">[io_Config("GenericSubject").tostring.replace(" [TestCaseName]",jobdata.WorkflowName)]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_BodyMessage">[strMailBody]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-          </Sequence>
-        </If.Then>
-        <If.Else>
-          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_65">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReadMailDraft - Invoke Workflow File (ReadMailDraft.xaml)" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="Utils\Generic\ReadMailDraft.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strFilePath">[io_Config("NoDataDraftPath").tostring]</InArgument>
-                <OutArgument x:TypeArguments="x:String" x:Key="out_strMailDraft">[strMailBody]</OutArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strReplaceText">[JobData.WorkflowName]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strProcessName">[io_Config("ProcessName").tostring]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_strException" />
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="SendEmailExecutionSummaryReport - Invoke Workflow File (Utils\Generic\SendEmailExecutionSummaryReport.xaml)" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="Utils\Generic\SendEmailExecutionSummaryReport.xaml">
-              <ui:InvokeWorkflowFile.Arguments>
-                <InArgument x:TypeArguments="x:String" x:Key="in_MailCC">[io_Config("Mail CC").ToString]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_MailTo">[io_Config("Mail To").tostring]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_MailAccount">[io_Config("Mail Account").tostring]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_AttachmentPath" />
-                <InArgument x:TypeArguments="x:String" x:Key="in_SubjectLine">[io_Config("NoDataSubject").tostring.replace(" [TestCaseName]",jobdata.WorkflowName)]</InArgument>
-                <InArgument x:TypeArguments="x:String" x:Key="in_BodyMessage">[strMailBody]</InArgument>
-              </ui:InvokeWorkflowFile.Arguments>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:InvokeWorkflowFile>
-          </Sequence>
-        </If.Else>
-      </If>
-      <Sequence DisplayName="Write Ouput data Sequence" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_66">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[DTOutput]" DisplayName="Write simplefield Ouput" sap:VirtualizedContainerService.HintSize="388,57.333333333333336" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[io_Config(&quot;SimpleFieldSheetName&quot;).tostring]" StartingCell="A1" WorkbookPath="[strOutputFilepath]">
+        <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[DTOutput]" DisplayName="Write simplefield Ouput" sap:VirtualizedContainerService.HintSize="388,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[io_Config(&quot;SimpleFieldSheetName&quot;).tostring]" StartingCell="A1" WorkbookPath="[in_StrOutputFilePath]">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:WriteRange>
-        <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[dtfinalOutputLineItem]" DisplayName="Write Lineitems Output File" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[io_Config(&quot;LineItemFieldSheetName&quot;).tostring]" StartingCell="A1" WorkbookPath="[strOutputFilepath]">
+        <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[dtfinalOutputLineItem]" DisplayName="Write Lineitems Output File" sap:VirtualizedContainerService.HintSize="388,138.66666666666666" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[io_Config(&quot;LineItemFieldSheetName&quot;).tostring]" StartingCell="A1" WorkbookPath="[in_StrOutputFilePath]">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </ui:WriteRange>
-      </Sequence>
-      <Sequence DisplayName="Delete and copy input template file" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_68">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="388,48" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[cint(io_Config(&quot;MaxRetryNumber&quot;))]" RetryInterval="[TimeSpan.FromSeconds(CInt(io_Config(&quot;DelaySmall&quot;))) ]">
-          <ui:RetryScope.ActivityBody>
-            <ActivityAction>
-              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="416,193.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_67">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="354,57.333333333333336" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[strTestCaseFilePath]">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:DeleteFileX>
-                <ui:CopyFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[strTestCaseFilePath]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[strInputTemplateFilePath]">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </ui:CopyFile>
-              </Sequence>
-            </ActivityAction>
-          </ui:RetryScope.ActivityBody>
-          <ui:RetryScope.Condition>
-            <ActivityFunc x:TypeArguments="x:Boolean" />
-          </ui:RetryScope.Condition>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:RetryScope>
       </Sequence>
       <Assign sap2010:Annotation.AnnotationText="Check if all the test data Execution status as &quot;Success&quot; or &quot;Failed&quot; and return Boolena result" DisplayName="Assign boolStatus" sap:VirtualizedContainerService.HintSize="450,162.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_34">
         <Assign.To>
           <OutArgument x:TypeArguments="x:Boolean">[boolExecutionStatus]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:Boolean">[dtExecutionsummary.AsEnumerable().All(Function(row) row("Status").ToString.Trim.Equals("Success"))]</InArgument>
+          <InArgument x:TypeArguments="x:Boolean">[in_DTExecutionSummary.AsEnumerable().All(Function(row) row("Status").ToString.Trim.Equals("Success"))]</InArgument>
         </Assign.Value>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -3039,26 +2769,26 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <If Condition="[boolExecutionStatus]" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_13">
+      <If Condition="[boolExecutionStatus]" sap:VirtualizedContainerService.HintSize="450,584.6666666666666" sap2010:WorkflowViewState.IdRef="If_13">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <If.Then>
-          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,136" sap2010:WorkflowViewState.IdRef="Sequence_69">
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,308" sap2010:WorkflowViewState.IdRef="Sequence_69">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="[io_config(&quot;Status_TC_21&quot;).tostring.trim]" DisplayName="Set status Asset True" FolderPath="[io_config(&quot;OrchestratorAssetFolder&quot;).tostring.trim]" sap:VirtualizedContainerService.HintSize="354,48" sap2010:WorkflowViewState.IdRef="SetAsset_2" Value="[True]">
+            <ui:SetAsset TimeoutMS="{x:Null}" AssetName="[io_config(&quot;Status_TC_21&quot;).tostring.trim]" DisplayName="Set status Asset True" FolderPath="[io_config(&quot;OrchestratorAssetFolder&quot;).tostring.trim]" sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="SetAsset_2" Value="[True]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SetAsset>
