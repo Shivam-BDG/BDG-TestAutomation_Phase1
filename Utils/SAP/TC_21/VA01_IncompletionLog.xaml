@@ -208,7 +208,7 @@
                   </uix:NSAPClickToolbarButton>
                   <uix:NSAPReadStatusbar MessageData="{x:Null}" MessageId="{x:Null}" MessageNumber="{x:Null}" MessageType="{x:Null}" DisplayName="Read Status Bar" sap:VirtualizedContainerService.HintSize="478,57.333333333333336" sap2010:WorkflowViewState.IdRef="NSAPReadStatusbar_1" MessageText="[strStatusbarMessage]" Version="V5">
                     <uix:NSAPReadStatusbar.Target>
-                      <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="9b8e03b4-f66a-4ef4-892a-4f83ecaf1840" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
+                      <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="bf87a960-8e1f-4a06-94f8-0d26e72b65a1" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Create Standard Order: Overview' /&gt;" SearchSteps="Selector" />
                     </uix:NSAPReadStatusbar.Target>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -217,7 +217,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NSAPReadStatusbar>
-                  <If Condition="[strStatusbarMessage.trim=&quot;Document is complete&quot;]" DisplayName="If Document is OK? " sap:VirtualizedContainerService.HintSize="478,57.333333333333336" sap2010:WorkflowViewState.IdRef="If_1">
+                  <If Condition="[strStatusbarMessage.trim=&quot;Document is complete&quot;]" DisplayName="If Document is OK? " sap:VirtualizedContainerService.HintSize="450,380.6666666666667" sap2010:WorkflowViewState.IdRef="If_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
