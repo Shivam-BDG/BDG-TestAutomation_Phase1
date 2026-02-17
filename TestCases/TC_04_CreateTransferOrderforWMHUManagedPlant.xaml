@@ -11,7 +11,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>719.3333333333334,813.3333333333334</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,2773.3333333333335</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TC_04_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -146,7 +146,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="This is the Test Case 04 in which we are testing the process for &quot;Create Transfer Order for WM/HU Managed Plant&quot;. This process is taking inputs as follows: &quot;Ware House Number&quot;, &quot;Delivery Number&quot;, and then Line Items related to each &quot;Delivery Number&quot;, those Line Items requires two fields:- &quot;Handling Unit&quot; and &quot;PartialQuantity&quot;. This test case is dependent on the TC_03 for the test case data.&#xA;&#xA;We are using BDD testing approach in this Test Case 04. Behavioral Driven Development or BDD has a standard template which follows the Given-When-Then structure to describe the behavior of a system." DisplayName="TC_04" sap:VirtualizedContainerService.HintSize="512,748.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="This is the Test Case 04 in which we are testing the process for &quot;Create Transfer Order for WM/HU Managed Plant&quot;. This process is taking inputs as follows: &quot;Ware House Number&quot;, &quot;Delivery Number&quot;, and then Line Items related to each &quot;Delivery Number&quot;, those Line Items requires two fields:- &quot;Handling Unit&quot; and &quot;PartialQuantity&quot;. This test case is dependent on the TC_03 for the test case data.&#xA;&#xA;We are using BDD testing approach in this Test Case 04. Behavioral Driven Development or BDD has a standard template which follows the Given-When-Then structure to describe the behavior of a system." DisplayName="TC_04" sap:VirtualizedContainerService.HintSize="772,2708.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strRemarks" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_ExecutionSummary" />
@@ -171,7 +171,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="This is the &quot;Given&quot; section in which we are initializing all the path variables, any other variables, and gathering any other data required to execute this test case.&#xA;Reading input Excel file, creating schemas for &quot;Execution Summary&quot; and &quot;Output&quot; Excel files&quot;, and in the last logging into SAP." DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,152.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="This is the &quot;Given&quot; section in which we are initializing all the path variables, any other variables, and gathering any other data required to execute this test case.&#xA;Reading input Excel file, creating schemas for &quot;Execution Summary&quot; and &quot;Output&quot; Excel files&quot;, and in the last logging into SAP." DisplayName="... Given" sap:VirtualizedContainerService.HintSize="710,152.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strStatus_TC03" />
       </Sequence.Variables>
@@ -367,31 +367,31 @@
         </Sequence>
       </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="This is the &quot;When&quot; section in which we are testing our main test case process, in this section we are invoking main workflows inside &quot;For-Each&quot; loop on test data. After getting output from the main workflows, we are adding rows to &quot;execution Summary&quot; and the &quot;Output&quot; datatables that whether the test case was &quot;Passed&quot; or &quot;Failed&quot;. If &quot;Passed&quot; then what's the output, and if &quot;Failed&quot; then what's the reason for it's failure. And also verifying output with the help of &quot;Verify Execution&quot; activity." DisplayName="... When" sap:VirtualizedContainerService.HintSize="866.6666666666666,3218.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap2010:Annotation.AnnotationText="This is the &quot;When&quot; section in which we are testing our main test case process, in this section we are invoking main workflows inside &quot;For-Each&quot; loop on test data. After getting output from the main workflows, we are adding rows to &quot;execution Summary&quot; and the &quot;Output&quot; datatables that whether the test case was &quot;Passed&quot; or &quot;Failed&quot;. If &quot;Passed&quot; then what's the output, and if &quot;Failed&quot; then what's the reason for it's failure. And also verifying output with the help of &quot;Verify Execution&quot; activity." DisplayName="... When" sap:VirtualizedContainerService.HintSize="710,1731.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:Int32" Name="CurrentIndex" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEachRow ColumnNames="{x:Null}" sap2010:Annotation.AnnotationText="Looping over the input test data present in the &quot;SimpleFields&quot; sheet with the help of &quot;For-Each&quot; loop." CurrentIndex="[CurrentIndex]" DataTable="[in_DTHeaderData]" DisplayName="For Each Row in dt_HeaderData DataTable" sap:VirtualizedContainerService.HintSize="804.6666666666666,3052" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow ColumnNames="{x:Null}" sap2010:Annotation.AnnotationText="Looping over the input test data present in the &quot;SimpleFields&quot; sheet with the help of &quot;For-Each&quot; loop." CurrentIndex="[CurrentIndex]" DataTable="[in_DTHeaderData]" DisplayName="For Each Row in dt_HeaderData DataTable" sap:VirtualizedContainerService.HintSize="648,1532.6666666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
         <ui:ForEachRow.Body>
           <ActivityAction x:TypeArguments="sd:DataRow">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRowHeader" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="770.6666666666666,2830.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="614,1311.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <TryCatch sap2010:Annotation.AnnotationText="Now, we are inside the &quot;For-Each&quot; loop and this &quot;Try-Catch&quot; is the Parent &quot;Try-Catch&quot; under which we are executing complete test case process and at the same time we are handling if any exception is occurring, exception can be any direct exception from any activity or can be from the &quot;Child Try-Catch&quot;. Also, we are catching two types of exceptions here : BRE and the SE. We are using BRE to catch the exception if any data is missing in the input file and the SE to catch exceptions coming from any activity throwing any system exception." DisplayName="Try Catch - Parent" sap:VirtualizedContainerService.HintSize="708.6666666666666,2742.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <TryCatch sap2010:Annotation.AnnotationText="Now, we are inside the &quot;For-Each&quot; loop and this &quot;Try-Catch&quot; is the Parent &quot;Try-Catch&quot; under which we are executing complete test case process and at the same time we are handling if any exception is occurring, exception can be any direct exception from any activity or can be from the &quot;Child Try-Catch&quot;. Also, we are catching two types of exceptions here : BRE and the SE. We are using BRE to catch the exception if any data is missing in the input file and the SE to catch exceptions coming from any activity throwing any system exception." DisplayName="Try Catch - Parent" sap:VirtualizedContainerService.HintSize="552,1223.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                 <TryCatch.Variables>
                   <Variable x:TypeArguments="x:String" Name="strWareHouseNumber" />
                   <Variable x:TypeArguments="x:String" Name="strDeliveryNumber" />
@@ -404,14 +404,14 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <TryCatch.Try>
-                  <Sequence DisplayName="Try Each CurrentRow" sap:VirtualizedContainerService.HintSize="670,2385.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <Sequence DisplayName="Try Each CurrentRow" sap:VirtualizedContainerService.HintSize="670,2059.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_19">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If sap2010:Annotation.AnnotationText="Checking whether the creation of &quot;Transfer Order&quot; is required or not." Condition="[(CurrentRowHeader(&quot;TORequired&quot;).ToString.Trim.ToLower)=&quot;true&quot;]" DisplayName="If - TORequired True?" sap:VirtualizedContainerService.HintSize="608,2297.3333333333335" sap2010:WorkflowViewState.IdRef="If_12">
+                    <If sap2010:Annotation.AnnotationText="Checking whether the creation of &quot;Transfer Order&quot; is required or not." Condition="[(CurrentRowHeader(&quot;TORequired&quot;).ToString.Trim.ToLower)=&quot;true&quot;]" DisplayName="If - TORequired True?" sap:VirtualizedContainerService.HintSize="608,1971.3333333333333" sap2010:WorkflowViewState.IdRef="If_12">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -829,16 +829,16 @@
                                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Using this workflow, we are inserting a new row  containing updated data to the &quot;Execution Summary&quot; datatable." DisplayName="InsertDynamicRowToDataTable - Invoke Workflow File (Utils\Generic\InsertDynamicRowToDataTable.xaml)" sap:VirtualizedContainerService.HintSize="388,143.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Utils\Generic\InsertDynamicRowToDataTable.xaml">
+                              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Using this workflow, we are inserting a new row  containing updated data to the &quot;Execution Summary&quot; datatable." DisplayName="InsertDynamicRowToDataTable - Invoke Workflow File (Utils\Generic\InsertDynamicRowToDataTable.xaml)" sap:VirtualizedContainerService.HintSize="388,230" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Utils\Generic\InsertDynamicRowToDataTable.xaml">
                                 <ui:InvokeWorkflowFile.Arguments>
                                   <InArgument x:TypeArguments="sd:DataRow" x:Key="in_drRow">[CurrentRowHeader]</InArgument>
                                   <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_dictExtraColumns">[dictExtraColumn]</InArgument>
-                                  <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_dtTarget">[dt_ExecutionSummary]</InOutArgument>
+                                  <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_dtTarget">[in_DTExecutionSummary]</InOutArgument>
                                 </ui:InvokeWorkflowFile.Arguments>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
@@ -871,7 +871,7 @@
                         </Sequence>
                       </If.Then>
                       <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,746" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="512,420" sap2010:WorkflowViewState.IdRef="Sequence_55">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -887,7 +887,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:LogMessage>
-                          <Assign sap2010:Annotation.AnnotationText="Using a dictionary to update the columns of &quot;Execution Summary&quot; and the &quot;Output&quot; datatables. For now, updating columns for the &quot;Success&quot; case." DisplayName="Creating And Updating Dictionary Of Extra Cols" sap:VirtualizedContainerService.HintSize="450,169.33333333333334" sap2010:WorkflowViewState.IdRef="Assign_24">
+                          <Assign sap2010:Annotation.AnnotationText="Using a dictionary to update the columns of &quot;Execution Summary&quot; and the &quot;Output&quot; datatables. For now, updating columns for the &quot;Success&quot; case." DisplayName="Creating And Updating Dictionary Of Extra Cols" sap:VirtualizedContainerService.HintSize="450,119.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_24">
                             <Assign.To>
                               <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[dictExtraColumn]</OutArgument>
                             </Assign.To>
@@ -907,11 +907,11 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </Assign>
-                          <Sequence sap2010:Annotation.AnnotationText="In this sequence, we are updating &quot;Output&quot; schema that we created in the &quot;Given&quot; section. Updating using the dictionary &quot;dictExtraColumn&quot;." DisplayName="Updating Output DataTable" sap:VirtualizedContainerService.HintSize="450,369.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                          <Sequence sap2010:Annotation.AnnotationText="In this sequence, we are updating &quot;Output&quot; schema that we created in the &quot;Given&quot; section. Updating using the dictionary &quot;dictExtraColumn&quot;." DisplayName="Updating Output DataTable" sap:VirtualizedContainerService.HintSize="450,93.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_57">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -936,18 +936,18 @@
                   </Sequence>
                 </TryCatch.Try>
                 <TryCatch.Catches>
-                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="674.6666666666666,23.333333333333332" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="518,916.6666666666666" sap2010:WorkflowViewState.IdRef="Catch`1_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ActivityAction x:TypeArguments="s:Exception">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Catch Failed CurrentRow - SE" sap:VirtualizedContainerService.HintSize="512,830" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                      <Sequence DisplayName="Catch Failed CurrentRow - SE" sap:VirtualizedContainerService.HintSize="512,844.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_33">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1046,7 +1046,7 @@
                             </Sequence>
                           </If.Else>
                         </If>
-                        <Sequence sap2010:Annotation.AnnotationText="In this sequence, we are updating &quot;Execution Summary&quot; schema that we created in the &quot;Given&quot; section. Updating using the dictionary &quot;dictExtraColumn&quot;." DisplayName="Updating Execution Summary DataTable" sap:VirtualizedContainerService.HintSize="450,104.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                        <Sequence sap2010:Annotation.AnnotationText="In this sequence, we are updating &quot;Execution Summary&quot; schema that we created in the &quot;Given&quot; section. Updating using the dictionary &quot;dictExtraColumn&quot;." DisplayName="Updating Execution Summary DataTable" sap:VirtualizedContainerService.HintSize="450,119.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_31">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1054,16 +1054,16 @@
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Using this workflow, we are inserting a new row  containing updated data to the &quot;Execution Summary&quot; datatable." DisplayName="InsertDynamicRowToDataTable - Invoke Workflow File (Utils\Generic\InsertDynamicRowToDataTable.xaml)" sap:VirtualizedContainerService.HintSize="388,143.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Utils\Generic\InsertDynamicRowToDataTable.xaml">
+                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Using this workflow, we are inserting a new row  containing updated data to the &quot;Execution Summary&quot; datatable." DisplayName="InsertDynamicRowToDataTable - Invoke Workflow File (Utils\Generic\InsertDynamicRowToDataTable.xaml)" sap:VirtualizedContainerService.HintSize="388,230" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="Utils\Generic\InsertDynamicRowToDataTable.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
                               <InArgument x:TypeArguments="sd:DataRow" x:Key="in_drRow">[CurrentRowHeader]</InArgument>
                               <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_dictExtraColumns">[dictExtraColumn]</InArgument>
-                              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_dtTarget">[dt_ExecutionSummary]</InOutArgument>
+                              <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_dtTarget">[in_DTExecutionSummary]</InOutArgument>
                             </ui:InvokeWorkflowFile.Arguments>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -1077,7 +1077,7 @@
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Using this workflow, we are inserting a new row  containing updated data to the &quot;Output&quot; datatable." DisplayName="InsertDynamicRowToDataTable - Invoke Workflow File (Utils\Generic\InsertDynamicRowToDataTable.xaml)" sap:VirtualizedContainerService.HintSize="388,126.66666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Utils\Generic\InsertDynamicRowToDataTable.xaml">
+                          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" sap2010:Annotation.AnnotationText="Using this workflow, we are inserting a new row  containing updated data to the &quot;Output&quot; datatable." DisplayName="InsertDynamicRowToDataTable - Invoke Workflow File (Utils\Generic\InsertDynamicRowToDataTable.xaml)" sap:VirtualizedContainerService.HintSize="388,213.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="Utils\Generic\InsertDynamicRowToDataTable.xaml">
                             <ui:InvokeWorkflowFile.Arguments>
                               <InArgument x:TypeArguments="sd:DataRow" x:Key="in_drRow">[CurrentRowHeader]</InArgument>
                               <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_dictExtraColumns">[dictExtraColumn]</InArgument>
@@ -1085,8 +1085,8 @@
                             </ui:InvokeWorkflowFile.Arguments>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -1118,11 +1118,11 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEachRow>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="This is the &quot;Then&quot; section in which we are firstly checking whether the data in &quot;Execution Summary&quot; datatable is present or not, if not then sending, a data not present Mail without any attachment, and if data is present then sending a executed successfully mail with an attachment of the &quot;Execution Summary&quot; Excel file. In the last we are also generating &quot;Output&quot; file and also preparing Input file for the next Test Case." DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,160" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap2010:Annotation.AnnotationText="This is the &quot;Then&quot; section in which we are firstly checking whether the data in &quot;Execution Summary&quot; datatable is present or not, if not then sending, a data not present Mail without any attachment, and if data is present then sending a executed successfully mail with an attachment of the &quot;Execution Summary&quot; Excel file. In the last we are also generating &quot;Output&quot; file and also preparing Input file for the next Test Case." DisplayName="... Then" sap:VirtualizedContainerService.HintSize="710,624.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
@@ -1152,7 +1152,7 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:WriteRange>
       </Sequence>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ValidateRows_UpdateAsset - Invoke Workflow File (Utils\Generic\ValidateRows_UpdateAsset.xaml)" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="Utils\Generic\ValidateRows_UpdateAsset.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ValidateRows_UpdateAsset - Invoke Workflow File (Utils\Generic\ValidateRows_UpdateAsset.xaml)" sap:VirtualizedContainerService.HintSize="450,177.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="Utils\Generic\ValidateRows_UpdateAsset.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InOutArgument x:TypeArguments="sd:DataTable" x:Key="in_DTExecutionSummary">[in_DTExecutionSummary]</InOutArgument>
           <InOutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="io_Config">[io_Config]</InOutArgument>
@@ -1162,8 +1162,8 @@
         </ui:InvokeWorkflowFile.Arguments>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:InvokeWorkflowFile>
