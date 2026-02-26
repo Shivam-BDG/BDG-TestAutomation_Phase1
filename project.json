@@ -1,5 +1,5 @@
 {
-  "name": "BDG_TestAutomation_Phase1",
+  "name": "BDG_TestAutomation_Phase1_BYQ",
   "projectId": "9a4b3a28-55c8-4f47-b029-d4e6d2581275",
   "description": "A modular and scalable test automation framework designed to validate SAP T-code workflows (e.g., VA01, VL01N, VF01) using screen-wise, reusable components. The framework supports multiple document types (e.g., OR, RE, CR), enables data-driven execution, captures dynamic outputs like document numbers, and includes robust error handling with clear logging and screenshots. Structured for easy maintenance and extension, it facilitates end-to-end regression testing and can integrate with CI/CD tools",
   "main": "Main.xaml",
@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "24.10.1.0",
-  "projectVersion": "1.0.214325389",
+  "projectVersion": "1.0.1-alpha",
   "runtimeOptions": {
     "exceptionHandlerWorkflow": "Utils\\SAP\\Reusables\\GlobalHandler.xaml",
     "autoDispose": false,
