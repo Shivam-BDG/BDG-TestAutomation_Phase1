@@ -96,7 +96,7 @@
         "executionTemplatePath": ".templates\\ExecutionTemplate.xaml",
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
-        "executionTemplateInvokeIsolated": true,
+        "executionTemplateInvokeIsolated": false,
         "fileName": "TestCases\\TC_05_AssignHUsAndTransferOrderforWMHUManagedPlant.xaml"
       },
       {

@@ -121,6 +121,7 @@
   <Sequence DisplayName="VL01N_PackMaterial" sap:VirtualizedContainerService.HintSize="1174,1593.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Int32" Default="0" Name="intHandlingUnitCount" />
+      <Variable x:TypeArguments="ui:CurrentJobInfo" Name="JobData" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">

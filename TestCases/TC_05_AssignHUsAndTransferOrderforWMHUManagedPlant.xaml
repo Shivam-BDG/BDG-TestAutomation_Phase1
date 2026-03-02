@@ -5,13 +5,13 @@
     <x:Property Name="in_strScreenshotPath" Type="InArgument(x:String)" />
     <x:Property Name="in_StrOutputFilePath" Type="InArgument(x:String)" />
     <x:Property Name="in_DTHeaderData" Type="InArgument(sd:DataTable)" />
-    <x:Property Name="in_DTExecutionSummary" Type="InOutArgument(sd:DataTable)" />
     <x:Property Name="in_strTestCaseFilePath" Type="InArgument(x:String)" />
+    <x:Property Name="in_DTExecutionSummary" Type="InOutArgument(sd:DataTable)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1149.3333333333333,2672</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>756,609.3333333333334</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>TC_InboundDelivery_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -128,13 +128,13 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="928.6666666666666,2607.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_112">
+  <Sequence sap:VirtualizedContainerService.HintSize="574,544.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_112">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Run LT03 to confirm the Transfer Order." DisplayName="TC_05" sap:VirtualizedContainerService.HintSize="866.6666666666666,2519.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_111">
+    <Sequence sap2010:Annotation.AnnotationText="Run LT03 to confirm the Transfer Order." DisplayName="TC_05" sap:VirtualizedContainerService.HintSize="512,456.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_111">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="DTOutput" />
         <Variable x:TypeArguments="x:String" Name="strTransferOrder" />
@@ -151,7 +151,7 @@
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence sap2010:Annotation.AnnotationText="The bot initializes required variables and paths, reads input Excel file with &quot;SimpleFields&quot; and &quot;LineItems&quot; sheets, maps data using &quot;ReferenceID&quot;, and logs into SAP." DisplayName="... Given" sap:VirtualizedContainerService.HintSize="804.6666666666666,119.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+      <Sequence sap2010:Annotation.AnnotationText="The bot initializes required variables and paths, reads input Excel file with &quot;SimpleFields&quot; and &quot;LineItems&quot; sheets, maps data using &quot;ReferenceID&quot;, and logs into SAP." DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,119.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="strAssetResult" />
           <Variable x:TypeArguments="x:String" Name="strTargetName" />
@@ -286,14 +286,14 @@
           </ui:AddDataColumn>
         </Sequence>
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="It loops through each row in &quot;SimpleFields&quot; and loop for LT03 transactions and logs assertion results (Pass/Fail) with screenshots." DisplayName="... When" sap:VirtualizedContainerService.HintSize="804.6666666666666,1834.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_77">
+      <Sequence sap2010:Annotation.AnnotationText="It loops through each row in &quot;SimpleFields&quot; and loop for LT03 transactions and logs assertion results (Pass/Fail) with screenshots." DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,102.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_77">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="strMessage" />
           <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="dictExtraColumn" />
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
@@ -957,13 +957,13 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:ForEachRow>
       </Sequence>
-      <Sequence sap2010:Annotation.AnnotationText="A consolidated output file is generated, and a summary email is sent to stakeholders." DisplayName="... Then" sap:VirtualizedContainerService.HintSize="804.6666666666666,424" sap2010:WorkflowViewState.IdRef="Sequence_61">
+      <Sequence sap2010:Annotation.AnnotationText="A consolidated output file is generated, and a summary email is sent to stakeholders." DisplayName="... Then" sap:VirtualizedContainerService.HintSize="450,93.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_61">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:Boolean" Name="boolExecutionStatus" />
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
           </scg:Dictionary>
